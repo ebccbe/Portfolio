@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Projects</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='bootstrap/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/modern-business.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/certi.css')}}">  
+
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="{{ url_for('home') }}#page-top">PORTFOLIO</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url_for('home') }}#about">About</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url_for('home') }}#projects">projects</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url_for('home') }}#certificate">Certificates</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{ url_for('home') }}#contact">Contact</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://www.linkedin.com/in/ebanuchandar" target="_blank">Linkedin</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://github.com/ebccbe" target="_blank">Github</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1534298261662-f8fdd25317db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+                <h1 class="text-uppercase text-light font-weight-bold">Analysis of Chicago Suburbs for a Prospective Restaurant Location</h1>
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <!-- <p class="text-white-75 font-weight-light mb-5">Top 20 Suburbs of Chicago are been considered as prospective locations for the new restaurant. Based on analysis of various data collected from United States Census Bureau and Foursquare API, ideal suburb will be identified for the new restaurant.</p>-->
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://github.com/ebccbe/Coursera_Capstone" target="_blank">Github</a>             
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <section class="page-section" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h3 class="page-section-heading text-center text-black">The Battle of Neighborhoods</h3>
+                <hr class="divider my-4" />
+                <h3 class ="text-left">Introduction</h3>
+                    <p class="text-muted mb-5 text-left">
+                        Chicago is the third most populous city in the United States and has diverse population. Chicago’s 58 million domestic
+                        and international visitors in 2018 made it the second most visited city in US when compared to New York City’s 65
+                        million visitors. Chicago is famous for large number of regional specialties (cuisines) which reflect the city’s ethnic
+                        and working-class roots. Large number of world-famous chefs have their restaurants in the City of Chicago.
+                    </p>
+                <h3 class="text-left">Business Problem</h3>
+                    <p class="text-muted mb-5 text-left">
+                        Our Client is running a fine dining restaurant in downtown Chicago; client wants to expand their operations into the
+                        suburbs of Chicago. Top 20 Suburbs of Chicago (Suburbs with population more than 5000) are been considered as
+                        prospective locations for the new restaurant. Based on analysis of various data collected from United States Census
+                        Bureau and Foursquare API, ideal suburb will be identified for the new restaurant.
+                    </p>
+                <h3 class="text-left">Data</h3>
+                    <ol class="text-muted mb-5 text-left">
+                        <li>Top 20 suburbs of Chicago metropolitan area (In the Data set Suburbs with population less than 5000 has been
+                        excluded) are based on the information available in <a href="www.niche.com"> www.niche.com </a>
+                        Ref:<a href ="https://www.niche.com/places-to-live/search/best-suburbs/m/chicago-metro-area/">https://www.niche.com/places-to-live/search/best-suburbs/m/chicago-metro-area/</a></li>
+                        <li>Suburbs Population data (Population estimates, July 1, 2019, (V2019)) is obtained from United States Census Bureau
+                        website for the suburbs obtained from niche website.
+                        Ref:<a href="https://www.census.gov/quickfacts/fact/table/US/PST045219">https://www.census.gov/quickfacts/fact/table/US/PST045219</a></li>
+                        <li>Each suburbs Latitude and Longitude is retrieved using <a href="https://opencagedata.com/tutorials/geocode-in-python">OpenCage Geocoder</a> Python package.</li>
+                        <li>Foursquare API is used to explore different venues and frequencies in each suburb, data retrieved will be helpful in
+                        clustering the suburbs based on their development.
+                        Foursquare API Developer Access:<a href="https://developer.foursquare.com/">https://developer.foursquare.com/</a></li>
+                    </ol class="text-left">
+                    <p class="text-muted mb-5 text-center">Table 1: Suburb’s Top 10 Venues
+                    <img src="{{url_for('static',filename='assets/img/capstone/table1.png')}}" style="width:100%">
+                    </p>
+                <h3 class="text-left">Methodology</h3>
+                    <ol class="text-muted mb-5 text-left">
+                        Methodology includes:
+                        <li>Data Retrieval, exploration, and wrangling</li>
+                        <li>K-mean Clustering</li>
+                        <li>Visualizing the venues, median income, and clustering of the suburbs</li>
+                    </ol>
+                <h3 class="text-left">Data Retrieval, exploration, and wrangling</h3>
+                    <ol class="text-muted mb-5 text-left">
+                        <li>United States Census Bureau website is used to obtain the 2019 estimated dataset for the suburbs shortlisted from niche
+                        website. Information in the Census Bureau website can be downloaded for 5 suburbs as an excel file. Multiple excel files
+                        have been combined and few of the columns which obsolete and of no importance has been removed.</li>
+                            <p class="text-muted mb-5 text-center">Table 2: Chicago Suburb’s Population Data
+                                <img src="{{url_for('static',filename='assets/img/capstone/table2.png')}}" style="width:100%">
+                                <p class="text-muted mb-5 text-left">Column Description:</p>
+                                <ol class="text-muted mb-5 text-left">
+                                    <li>Suburb – Name of the Suburb in Chicago</li>
+                                    <li>PE2019 – 2019 Estimated population</li>
+                                    <li>PE2010 – 2010 Population</li>
+                                    <li>PChange – Percentage Change in population</li>
+                                    <li>U18 – Percentage of population below age of 18 years</li>
+                                    <li>A65 – Percentage of population equal to and above 65 years</li>
+                                    <li>Bdegree – Percentage of population above 25 years with bachelor’s degree</li>
+                                    <li>MIncome – Median Income</li>
+                                    <li>PCIncome – Per capita Income</li>
+                                    <li>Poverty – Percentage of population below poverty line</li>
+                                    <li>Larea – Area of the suburb in square miles.</li>
+                                </ol>
+                                Only the above column has been selected from the census data set, other information has been ignored from the census
+                                dataset. Even though, only limited number of columns has been used in this analysis; left out column information can be
+                                used to make better decision.
+                            </p>
+                        <li>Using OpenCage Geocoder Python package Latitude and Longitude of Suburbs will be retrieved.</li>
+                            <p class="text-muted mb-5 text-center">Table 3: Suburbs Geo coordinates
+                                <img src="{{url_for('static',filename='assets/img/capstone/table3.png')}}" style="width:100%">
+                            </p>
+                            <p class="text-muted mb-5 text-center">Fig 1: Best Suburbs of Chicago
+                                <img src="{{url_for('static',filename='assets/img/capstone/fig1.png')}}" style="width:100%">
+                            </p>
+                        <li>Shortlisting Top 5 Suburbs based on their Median Income.</li>
+                            <p class="text-muted mb-5 text-center">Table 4: Top 5 Median Income Suburbs
+                                <img src="{{url_for('static',filename='assets/img/capstone/table4.png')}}" style="width:100%">
+                            </p>
+                    </ol>
+                <h3 class="text-left">Performing K-mean Clustering</h3>
+                            <p class="text-muted mb-5 text-left">
+                                Top 10 Venues of the Suburbs has been selected and considered for K-mean clustering. Since 20 suburbs are been
+                                considered for K-mean clustering; clustering size k=5 was assumed.
+                            </p>
+                            <p class="text-muted mb-5 text-center">Table 5: Top 10 Venues for each Suburb
+                                <img src="{{url_for('static',filename='assets/img/capstone/table5.png')}}" style="width:100%">
+                            </p>
+                            <p class="text-muted mb-5 text-left">
+                                After k-mean clustering, the suburbs are been mapped based on the Cluster. K-mean clustering does not give a proper
+                                interpretation and cluster are scattered. A better clustering size needs to be considered for further analysis. Since a
+                                clear picture is not obtained from clustering it is better to investigate median income and geological location of each
+                                suburbs.
+                            </p>
+                            <p class="text-muted mb-5 text-center">Fig 2: K-Mean Cluster Suburbs
+                                <img src="{{url_for('static',filename='assets/img/capstone/fig2.png')}}" style="width:100%">
+                            </p>
+                <h3 class="text-left">Visualizing the venues, median income, and clustering of the suburbs</h3>
+                            <p class="text-muted mb-5 text-left">
+                                Since K-mean clustering did not led to any decision making; median income of the suburbs is been considered as major
+                                decision-making parameter in selecting the prospective location.
+                            </p>
+                            <p class="text-muted mb-5 text-center">Fig 3: Top 5 Median Income Suburbs</p>
+                            <img src="{{url_for('static',filename='assets/img/capstone/fig3.png')}}" style="width:100%">
+                            <p class="text-muted mb-5 text-left">
+                                Visualizing number of venues in each suburb. Based on the following chart Naperville has the highest number of venues
+                                followed by Wheaton city.
+                            </p>
+                            <p class="text-muted mb-5 text-center">Fig 4: Suburb Venue Count</p>
+                            <img src="{{url_for('static',filename='assets/img/capstone/fig4.png')}}" style="width:100%">
+                <h3 class="text-left">Results</h3>
+                            <p class="text-muted mb-5 text-left">Western Springs village has been considered as the prospective location for the new fine dining restaurant, this
+                            decision was enabled by Analysis of the Visual maps and location pattern. Western Springs Village is located nearer to
+                            another 4 suburbs in the list.
+                            </p>
+                            <p class="text-muted mb-5 text-center">Fig 5: Comparison of 20 Suburbs vs Top 5 Median Income Suburbs
+                            <img src="{{url_for('static',filename='assets/img/capstone/Fig5_3.png')}}" style="width:100%">
+                            <img src="{{url_for('static',filename='assets/img/capstone/fig5_4.png')}}" style="width:100%">
+                            </p>
+                            <p class="text-muted mb-5 text-center">Fig 6: Suburbs near Western Springs Village
+                            <img src="{{url_for('static',filename='assets/img/capstone/fig6.png')}}" style="width:100%">
+                            </p>
+                            <p class="text-muted mb-5 text-left">Western Springs village is considered as the ideal location to start a new fine dining restaurant due to the following
+                            reasons
+                                <ol class="text-muted mb-5 text-left">
+                                    <li>High Median Income of $161,563</li>
+                                    <li>Location
+                                        <ol>
+                                            <li>Western Springs village is located closer to some of the best suburbs like La Grange Park village, Clarendon Hills
+                                            village, La Grange village, Hinsdale village</li>
+                                            <li>These 5 Suburbs has a total population of 68,248</li>
+                                            <li>Western Springs village is also located nearer to Tri State Tollway</li>
+                                            <li>Hinsdale village is among top 5 richest suburb which is located nearer to Western Springs village</li>
+                                        </ol>
+                                    </li>
+                                    <li>78.4% of the adult population above 25 years holds a bachelor’s degree</li>
+                                    <li>Most of the venues in Western Springs village are located near the railway line. It is highly recommended to open the
+                                    restaurant in the downtown Western Springs village nearer to the intersection of Rail line and Wolf Road.</li>
+                                </ol>
+                            </p>
+                            <p class="text-muted mb-5 text-center">Fig 7: Venues in and around Western Springs Village
+                                <img src="{{url_for('static',filename='assets/img/capstone/fig7.png')}}" style="width:100%">
+                            </p>
+                            <p class="text-muted mb-5 text-center">Fig 8: Venues in Western Springs Village
+                                <img src="{{url_for('static',filename='assets/img/capstone/fig8.png')}}" style="width:100%">
+                            </p>
+                <h3 class="text-left">Discussion</h3>
+                            <p class="text-muted mb-5 text-left">
+                                Scope of this project was to identity an ideal location for our client to expand their restaurant operation in suburbs
+                                of Chicago. It would be interesting to study further parameter available in the census dataset which may lead to
+                                different outcome. Parameter like per capita income, poverty can play a vital role in determine the profit and location
+                                of the new restaurant. Current, Census dataset can be combined with another dataset like sale in getting better insight
+                                of operating a restaurant in that locality.
+                            </p>
+                <h3 class="text-left">Conclusion</h3>
+                            <p class="text-muted mb-5 text-left">Even though, the combination of United States Census Bureau data and Foursquare venue data was used for the analysis;
+                            combined dataset was not sufficient to determine the prospective location. Standalone dataset from United States Census
+                            Bureau website along with geo location coordinates was sufficient to determine the prospective location. Addition
+                            information from U.S. Department of Labor can be used to determine the operation cost which would be most valued by the
+                            client in predicting the profits.
+                            </p>
+
+                            
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="bg-light py-5">
+    <div class="container"><div class="small text-center text-muted">Copyright © 2020 - EBC DS</div></div>
+</footer>  
+
+<!-- Bootstrap Js -->
+<script src="{{url_for('static',filename='jquery/jquery.min.js')}}"></script>
+<script src="{{url_for('static',filename='bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+</body>
+</html>

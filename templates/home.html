@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>EBC Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Custom styles for this template -->
+  <!-- <link href="css/modern-business.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="{{url_for('static',filename='bootstrap/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/modern-business.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/certi.css')}}">  
+
+
+</head>
+
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">PORTFOLIO</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">projects</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#certificate">Certificates</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://www.linkedin.com/in/ebanuchandar" target="_blank">Linkedin</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://github.com/ebccbe" target="_blank">Github</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+
+    <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1456428746267-a1756408f782?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')">
+      <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center text-center">
+              <div class="col-lg-10 align-self-end">
+                  <h1 class="text-uppercase text-white font-weight-bold">DATA SCIENCE PORTFOLIO</h1>
+              </div>
+              <div class="col-lg-8 align-self-baseline">
+                  <p class="text-white-75 font-weight-light mb-5">Portfolio contains projects created using Python, Power BI and Tableau. Website was developed from scratch using HTML, CSS and Python Flask</p>
+                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About</a>             
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ml-auto"><p class="lead">I am Banuchandar Esakkimuthu. I have a master's degree in Industrial Engineering from The University of Texas at Arlington, USA and a bachelor's degree in Electronics and Communication Engineering from Amrita Vishwa Vidyapeetham University,India. </p></div>
+                <div class="col-lg-4 mr-auto"><p class="lead">Experienced Business/Data Analyst proficient in data analysis & mapping, process mapping, continuous improvement and implementation. Have worked with multiple US clients in manufacturing, logistics, education, government, and E-commerce domains.</p></div>
+            </div>
+            <!-- Resume Button-->
+            <div class="text-center mt-4">
+              <a class="btn btn-light btn-xl js-scroll-trigger" href="{{url_for('static',filename='assets/resume/resume.pdf')}}" target="_blank">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section class="page-section" id="projects">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-black">Projects</h2>
+            <hr class="divider my-4" />
+            <br>
+
+            <div class="row">
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="https://github.com/ebccbe/Wiki_Web_Scraping" target="_blank">Wiki Web Scraping</a>
+                        </h4>
+                        <p class="card-text">Program to scrap the table data from wikipedia pages was developed using python and was intented to save time & save required data in excel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80/700x400" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                    <!-- <a href="https://github.com/ebccbe/Coursera_Capstone">Python: Analysis of Chicago Suburbs for a Prospective Restaurant Location</a> -->
+                    <a href="{{ url_for('capstone') }}" target="_blank">Analysis of Chicago Suburbs for a Prospective Restaurant Location</a>                    
+                    </h4>
+                    <p class="card-text">Top 20 Suburbs of Chicago are been considered as prospective locations for the new restaurant. Based on analysis of various data collected from United States Census Bureau and Foursquare API, ideal suburb will be identified for the new restaurant.</p>
+                </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://images.unsplash.com/photo-1537724326059-2ea20251b9c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80/700x400" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiY2ViYmJjMDUtYjMzMC00OTczLWIzMjYtMTUyNjlkYWVjYjU1IiwidCI6ImQ4MjM2NDI3LTZmZWQtNGNjYi05YTBmLWZjZTlhZDdhY2U3YSIsImMiOjN9&pageName=ReportSection" target="_blank">Power BI: Sample</a>
+                    </h4>
+                    <p class="card-text">Power Bi Sample Project - added via </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80/700x400" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                    <a href="https://public.tableau.com/views/Tableau_Test1_15973404268950/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link" target="_blank">Tableau: Sample Project</a>
+                    </h4>
+                    <p class="card-text">Tableau public sample project</p>
+                </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!--Certificates-->
+    <section class="page-section bg-primary text-white mb-0" id="certificate">
+      <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-white">Certificates</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+        </div>     
+      </div>
+    </section>
+
+        <!-- Portfolio-->
+        <div id="portfolio">
+          <div class="container-fluid p-0">
+              <div class="row no-gutters">
+                  <div class="col-lg-4 col-sm-6">
+                      <a class="portfolio-box" href="https://www.coursera.org/account/accomplishments/specialization/certificate/4BQBUTKND6BG" target="_blank">
+                          <img class="img-fluid" src="{{url_for('static',filename='assets/img/thumbnails/ibmT.png')}}" alt="" />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">IBM</div>
+                            <div class="project-name">Data Science Professional Certificate</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                      <a class="portfolio-box" href="{{url_for('static',filename='assets/img/certificates/green.png')}}" target="_blank">
+                          <img class="img-fluid" src="{{url_for('static',filename='assets/img/thumbnails/iie3.png')}}" alt="" />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Institute of Industrial and Systems Engineers</div>
+                            <div class="project-name">Six Sigma Green Belt Certificate</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                      <a class="portfolio-box" href="{{url_for('static',filename='assets/img/certificates/yellow.png')}}" target="_blank">
+                          <img class="img-fluid" src="{{url_for('static',filename='assets/img/thumbnails/airbus.png')}}" alt="" />
+                          <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">Airbus Helicopters</div>
+                            <div class="project-name">Yellow Belt Certification</div>
+                          </div>
+                      </a>
+                  </div>
+                  <!-- <div class="col-lg-4 col-sm-6">
+                      <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
+                          <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
+                          <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                      <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
+                          <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
+                          <div class="portfolio-box-caption">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                      <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
+                          <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
+                          <div class="portfolio-box-caption p-3">
+                              <div class="project-category text-white-50">Category</div>
+                              <div class="project-name">Project Name</div>
+                          </div>
+                      </a>
+                  </div> -->
+              </div>
+          </div>
+      </div>
+
+
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8 text-center">
+                      <h2 class="page-section-heading text-center text-uppercase text-black">CONTACT</h2>
+                      <hr class="divider my-4" />
+                      <!-- <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
+                      <a class="d-block" href="mailto:bcesakki@hotmail.com.com">Email</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- Footer-->
+      <footer class="bg-light py-5">
+          <div class="container"><div class="small text-center text-muted">Copyright © 2020 - EBC DS</div></div>
+      </footer>  
+
+  <!-- Bootstrap Js -->
+  <script src="{{url_for('static',filename='jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static',filename='bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+</body>
+</html>
