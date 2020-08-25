@@ -1,3 +1,5 @@
+STEPS TO CREATE AND DEPLOY THE WEBSITE
+
 Python Flask Website 
 
 1) Create script1.py
