@@ -1,6 +1,6 @@
 STEPS TO CREATE AND DEPLOY THE WEBSITE
 
-Python Flask Website 
+Python Flask Website (using Visual Code)
 
 1) Create script1.py
 2) Create templates folder
