@@ -1,6 +1,6 @@
-STEPS TO CREATE AND DEPLOY THE WEBSITE
+# STEPS TO CREATE AND DEPLOY THE WEBSITE
 
-Python Flask Website (using Visual Code)
+## Python Flask Website (using Visual Code)
 
 1) Create script1.py
 2) Create templates folder
@@ -14,8 +14,8 @@ Python Flask Website (using Visual Code)
 8) Optional - "virtual\Scripts\python.exe -m pip install --upgrade pip"
 9) Run the app - "virtual\Scripts\python Portfolio\script1.py"
 
-Python website deployment
---Heroku
+## Python website deployment
+## Heroku
 
 1) Create Heroku account
 2) Download herokutoolbelt 
@@ -45,7 +45,7 @@ Python website deployment
 19) open ur app using cmd by "heroku open" or by copying the web link 
 20) app info using cmd "heroku info"
 
-References:
+## References:
 1) https://www.hongkiat.com/blog/
 2) https://www.dataquest.io/blog/how-to-setup-a-data-science-blog/
 3) https://www.w3schools.com/
