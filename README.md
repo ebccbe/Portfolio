@@ -1,3 +1,8 @@
+# My Portfolio Website
+
+![P1](https://user-images.githubusercontent.com/66351391/98823910-a6420a80-2458-11eb-90d7-1df285fd2973.PNG)
+
+
 # STEPS TO CREATE AND DEPLOY THE WEBSITE
 
 ## Python Flask Website (using Visual Code)
